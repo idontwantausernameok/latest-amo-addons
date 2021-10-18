@@ -1,0 +1,11 @@
+{
+  "author": "igorlogius",
+  "background": { "scripts": [ "background.js" ] },
+  "browser_action": {},
+  "description": "",
+  "manifest_version": 2,
+  "name": "latest-amo-addons",
+  "permissions": [],
+  "sidebar_action": { "default_panel": "main.html"},
+  "version": "0.1.0"
+}
