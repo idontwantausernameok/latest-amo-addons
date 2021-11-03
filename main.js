@@ -33,13 +33,13 @@ async function updateSidebar(aType) {
 			for (const addon of data.results) {
 				try {
 					if(
-						addon.id 
-					     && addon.url 
-					     && addon.name 
-					     && addon.name[addon.default_locale] 
-					     && addon.last_updated 
-					     && addon.icon_url 
-					     && addon.summary 
+						addon.id
+					     && addon.url
+					     && addon.name
+					     && addon.name[addon.default_locale]
+					     && addon.last_updated
+					     && addon.icon_url
+					     && addon.summary
 					     && addon.summary[addon.default_locale]
 					){
 						// clear list on first new found
@@ -49,7 +49,7 @@ async function updateSidebar(aType) {
 						}
 						addonList.appendChild(
 							createAddonNode(
-								{	
+								{
 									"id": addon.id,
 									"url": addon.url,
 									"name": addon.name[addon.default_locale],
@@ -64,7 +64,7 @@ async function updateSidebar(aType) {
 					console.log(`Invalid post entry:\n${e}`);
 				}
 			}
-		} 
+		}
 	}catch(e){
 		console.error(e);
 	}
